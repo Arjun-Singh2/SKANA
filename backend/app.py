@@ -26,7 +26,7 @@ client = MongoClient(connec_string)
 
 try:
     client.admin.command('ping')
-    print("MongoDB is connected")
+    print("MongoDB is established")
     print(f"Available databases: {client.list_database_names()}")
     db = client['UserTest']
     users_collection = db['users']
